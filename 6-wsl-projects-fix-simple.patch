@@ -1,0 +1,28 @@
+--- a/src-tauri/src/commands/agents.rs
++++ b/src-tauri/src/commands/agents.rs
+@@ -1571,8 +1571,10 @@ pub async fn get_session_output(
+     
+     // Check if projects directory exists
+     if !projects_dir.exists() {
+-        log::error!("Projects directory not found at: {:?}", projects_dir);
+-        return Err("Projects directory not found".to_string());
++        // Don't log as error - this is expected on Windows when Claude runs in WSL
++        // The agent still works correctly, so just return empty output
++        log::debug!("Projects directory not found at: {:?}, returning empty output", projects_dir);
++        return Ok(String::new());
+     }
+ 
+     // Search for the session file in all project directories
+@@ -2227,8 +2229,10 @@ pub async fn load_agent_session_history(
+     let projects_dir = claude_dir.join("projects");
+     
+     if !projects_dir.exists() {
+-        log::error!("Projects directory not found at: {:?}", projects_dir);
+-        return Err("Projects directory not found".to_string());
++        // Don't log as error - this is expected on Windows when Claude runs in WSL
++        // Return empty list instead of error
++        log::debug!("Projects directory not found at: {:?}", projects_dir);
++        return Ok(Vec::new());
+     }
+ 
+     // Search for the session file in all project directories
