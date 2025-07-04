@@ -29,7 +29,6 @@ Before starting, ensure you have:
 | **Rust** | For building Tauri | [rustup.rs](https://rustup.rs/) | Install in Windows |
 | **VS Build Tools** | C++ compiler | [Download](https://visualstudio.microsoft.com/visual-cpp-build-tools/) | Select "Desktop development with C++" |
 | **Claudia** | The app source code | Clone from GitHub | |
-| **RAM** | Minimum 4GB recommended | System requirement | |
 
 ## 🚀 Quick Installation
 
