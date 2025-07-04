@@ -159,7 +159,6 @@ graph LR
 - **`setup-windows.bat`** - WSL bridge setup script
 - **`start-claudia.bat`** - Pre-flight checker and launcher
 - **`auto-install-windows.bat`** - Fully automated installer
-- **`patches/`** - Individual patch files for reference
 
 ## 🐛 Troubleshooting
 
@@ -167,7 +166,7 @@ graph LR
 
 | Error | Cause | Solution |
 |-------|-------|----------|
-| `claude: command not found` | CLI not installed in WSL | Run `3-setup-windows.bat` again |
+| `claude: command not found` | CLI not installed in WSL | Run `setup-windows.bat` again |
 | `claude.bat is not recognized` | PATH not configured | Add `C:\Users\USERNAME\AppData\Roaming\npm` to system PATH |
 | `Failed to load settings` | Missing ~/.claude directory | Run setup script or `wsl mkdir -p ~/.claude` |
 | `Version mismatch` | Old patch version | Ensure you applied v4.2 patch |
@@ -222,7 +221,7 @@ If `claude.bat` is not found:
 
 | Feature | v4.1 | v4.2 |
 |---------|------|------|
-| Build Script Patches | Manual application | Fully automated with 5-auto-install-windows.bat |
+| Build Script Patches | Manual application | Fully automated with auto-install-windows.bat |
 | Icon Handling | Basic | Comprehensive troubleshooting |
 | Build Location | Unclear | Explicit Windows CMD requirement |
 | Error Documentation | Basic | Extensive with solutions |
