@@ -42,7 +42,7 @@ cd claudia
 git clone https://github.com/Kirchlive/Claudia-For-Windows.git
 
 # 3. Run the auto-installer
-Claudia-For-Windows\5-auto-install-windows.bat
+Claudia-For-Windows\auto-install-windows.bat
 
 # 4. When prompted, press 'y' to continue with setup
 
@@ -154,11 +154,11 @@ graph LR
 
 ## 📁 Repository Contents
 
-- **`1-claudia-windows-fix.md`** - Complete installation guide with troubleshooting
-- **`2-claude_binary_patch.rs`** - Version compatibility patch reference
-- **`3-setup-windows.bat`** - WSL bridge setup script
-- **`4-start-claudia.bat`** - Pre-flight checker and launcher
-- **`5-auto-install-windows.bat`** - Fully automated installer
+- **`claudia-windows-fix.md`** - Complete installation guide with troubleshooting
+- **`claude_binary_patch.rs`** - Version compatibility patch reference
+- **`setup-windows.bat`** - WSL bridge setup script
+- **`start-claudia.bat`** - Pre-flight checker and launcher
+- **`auto-install-windows.bat`** - Fully automated installer
 - **`patches/`** - Individual patch files for reference
 
 ## 🐛 Troubleshooting
@@ -268,6 +268,6 @@ This fix was developed collaboratively by the Claudia community. Special thanks 
 ## 📚 Additional Resources
 
 - [Claudia Repository](https://github.com/getAsterisk/claudia)
-- [Detailed Installation Guide](1-claudia-windows-fix.md)
+- [Detailed Installation Guide](claudia-windows-fix.md)
 - [WSL Documentation](https://docs.microsoft.com/en-us/windows/wsl/)
 - [Node.js in WSL Guide](https://docs.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)

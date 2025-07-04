@@ -210,7 +210,7 @@ echo ==                                                             ==
 echo ==            ALL PATCHES APPLIED SUCCESSFULLY!                ==
 echo ==                                                             ==
 echo ==   Next steps:                                               ==
-echo ==   1. Run 3-setup-windows.bat to install Claude CLI in WSL  ==
+echo ==   1. Run setup-windows.bat to install Claude CLI in WSL     ==
 echo ==   2. Run 'bun install' to install dependencies             ==
 echo ==   3. Run 'bun run build' to build the frontend             ==
 echo ==   4. Run 'bun run tauri build' to build Claudia            ==
@@ -220,11 +220,11 @@ echo =================================================================
 echo.
 
 REM Ask if user wants to run setup script
-set /p RUN_SETUP="Do you want to run 3-setup-windows.bat now? (y/n): "
+set /p RUN_SETUP="Do you want to run setup-windows.bat now? (y/n): "
 if /i "%RUN_SETUP%"=="y" (
     echo.
     echo Running setup script...
-    call "%~dp0\3-setup-windows.bat"
+    call "%~dp0\setup-windows.bat"
 )
 
 pause

@@ -55,7 +55,7 @@ if %ERRORLEVEL% NEQ 0 (
     echo This means the setup script was not run correctly
     echo or %%APPDATA%%\npm is not in your system PATH.
     echo.
-    echo Please run '2-setup-windows.bat' again.
+    echo Please run 'setup-windows.bat' again.
     echo.
     pause
     exit /b 1
@@ -69,7 +69,7 @@ wsl test -f ~/.npm-global/bin/claude
 if %ERRORLEVEL% NEQ 0 (
     echo [ERROR] The 'claude' CLI tool was not found in your WSL distribution.
     echo.
-    echo Please ensure you have run the '2-setup-windows.bat' script
+    echo Please ensure you have run the 'setup-windows.bat' script
     echo to install the tool inside your WSL environment.
     echo.
     pause
