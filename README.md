@@ -1,4 +1,4 @@
-# Claudia For Windows v4.2
+# Claudia For Windows
 
 A comprehensive Windows compatibility solution for [Claudia GUI](https://github.com/getAsterisk/claudia) using WSL (Windows Subsystem for Linux) as a bridge.
 
