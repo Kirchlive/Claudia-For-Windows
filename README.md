@@ -1,6 +1,6 @@
 # Claudia For Windows
 
-A comprehensive Windows compatibility solution for [Claudia GUI](https://github.com/getAsterisk/claudia) using WSL (Windows Subsystem for Linux) as a bridge.
+A comprehensive Windows compatibility solution for [Claudia GUI](https://github.com/getAsterisk/claudia) using WSL as a bridge.
 
 ![Windows](https://img.shields.io/badge/Windows-10%2F11-blue)
 ![WSL](https://img.shields.io/badge/WSL-2-green)
